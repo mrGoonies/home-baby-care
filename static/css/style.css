@@ -1,0 +1,81 @@
+/* Formatear html*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Primary font*/
+@font-face {
+    font-family: 'dr-agu-sans-bold-bold';
+    src: url(../fonts/dr-agu-sans-bold-bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+/* Secundary Font*/
+@font-face {
+    font-family: 'Merge Pro Bold';
+    src: url(../fonts/Merge\ Pro\ Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+/* main */
+main {
+    .presentation {
+        background-color: #faefd8;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+
+        .presentation__left {
+            padding: 2rem;
+            margin: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-family: 'dr-agu-sans-bold-bold';
+                font-size: 5rem;
+                color: #fba3a4;
+            }
+
+            /*Boton redondeado*/
+            a {
+                padding: 1rem 2rem;
+                margin-top: 2rem;
+                background-color: #358091;
+                color: white;
+                border-radius: 10px;
+                font-family: 'Merge Pro Bold';
+                font-size: 1.5rem;
+                text-decoration: none;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: #fba3a4;
+                    color: white;
+                    transform: scale(1.1);
+                }
+            }
+            
+        }
+
+        .presentation__right {
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+/* Responsive */
+
+
