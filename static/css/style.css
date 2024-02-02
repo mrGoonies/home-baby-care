@@ -5,6 +5,22 @@
     box-sizing: border-box;
 }
 
+/*quitar y agregar scrollbar personalizado*/
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fba3a4;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #faefd8;
+}
+
+
+
 /* Primary font*/
 @font-face {
     font-family: 'dr-agu-sans-bold-bold';
@@ -46,7 +62,6 @@ main {
                 color: #fba3a4;
             }
 
-            /*Boton redondeado*/
             a {
                 padding: 1rem 2rem;
                 margin-top: 2rem;
@@ -96,7 +111,6 @@ main {
                 color: #358091;
             }
 
-            /* Redondear imagen tipo círculo*/
             img {
                 width: 100%;
                 border-radius: 50%;
@@ -190,7 +204,6 @@ main {
                 grid-column: span 2;
                 height: 80%;
 
-                /*colocar imagen izquierda y texto a la derecha*/
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
