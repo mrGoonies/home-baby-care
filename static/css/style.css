@@ -64,7 +64,7 @@ main {
                     transform: scale(1.1);
                 }
             }
-            
+
         }
 
         .presentation__right {
@@ -101,8 +101,6 @@ main {
                 width: 100%;
                 border-radius: 50%;
                 margin: 2rem;
-               
-
             }
         }
 
@@ -121,8 +119,122 @@ main {
 
         }
     }
+
+    .services {
+        background-color: #faefd8;
+        padding: 2rem;
+
+        h2 {
+            font-family: 'dr-agu-sans-bold-bold';
+            font-size: 3.5rem;
+            color: #fba3a4;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .services__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            
+
+            .services__card {
+                background-color: #358091;
+                padding: 1rem;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s ease;
+
+                img {
+                    margin: 2rem;
+                    width: 20%;
+                    margin-bottom: 2rem;
+                    border: 2px solid #faefd8;
+                    border-radius: 50%;
+                    padding: 0.5rem;
+                    
+                }
+
+                h3 {
+                    font-family: 'dr-agu-sans-bold-bold';
+                    font-size: 2rem;
+                    color: #fba3a4;
+                    border: 2px solid #faefd8;
+                    padding: 0.5rem;
+                    border-radius: 10px;
+                    
+                }
+
+                p {
+                    font-family: 'Merge Pro Bold';
+                    font-size: 1.5rem;
+                    color: #fba3a4;
+                    text-align: center;
+                }
+
+                small {
+                    font-family: 'Merge Pro Bold';
+                    font-size: 1.5rem;
+                    color: #faefd8;
+                }
+
+                
+            }
+            .services__card--last {
+                grid-column: span 2;
+                height: 80%;
+
+                /*colocar imagen izquierda y texto a la derecha*/
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center; 
+
+                img {
+                    width: 10%;
+                    margin: 2rem;
+                    border-radius: 50%;
+                    padding: 0.5rem;
+                    border: 2px solid #faefd8;
+                }
+
+                .services__card--last__content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    h3 {
+                        font-family: 'dr-agu-sans-bold-bold';
+                        font-size: 2rem;
+                        color: #fba3a4;
+                        border: 2px solid #faefd8;
+                        padding: 0.5rem;
+                        border-radius: 10px;
+                    }
+
+                    p {
+                        font-family: 'Merge Pro Bold';
+                        font-size: 1.5rem;
+                        color: #fba3a4;
+                        text-align: center;
+                    }
+
+                    small {
+                        font-family: 'Merge Pro Bold';
+                        font-size: 1.5rem;
+                        color: #faefd8;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Responsive */
-
-
