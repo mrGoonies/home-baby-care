@@ -72,7 +72,54 @@ main {
                 width: 100%;
             }
         }
+    }
 
+    .about {
+        background-color: #fba3a4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+
+        .about__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem;
+
+            h2 {
+                font-family: 'dr-agu-sans-bold-bold';
+                font-size: 3.5rem;
+                color: #358091;
+            }
+
+            /* Redondear imagen tipo círculo*/
+            img {
+                width: 100%;
+                border-radius: 50%;
+                margin: 2rem;
+               
+
+            }
+        }
+
+        .about__right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-family: 'Merge Pro Bold';
+                font-size: 1.5rem;
+                color: #358091;
+                margin-bottom: 2rem;
+            }
+
+        }
     }
 }
 
