@@ -37,6 +37,26 @@ body::-webkit-scrollbar-track {
     font-style: bold;
 }
 
+/* Header */
+header {
+    background-color: #faefd8;
+    padding: 2rem;
+
+    
+
+    img {
+        height: 100px;
+        width: 150px;
+    }
+
+    
+
+    .nav-link {
+        font-size: 1.7rem;
+        font-family: 'Merge Pro Bold';
+        margin: 0 1rem;
+    }
+}
 /* main */
 main {
     .presentation {
