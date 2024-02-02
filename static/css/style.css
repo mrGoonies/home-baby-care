@@ -250,4 +250,66 @@ main {
     }
 }
 
-/* Responsive */
+footer {
+    background-color: #358091;
+    padding: 2rem;
+
+    h3 {
+        font-family: 'dr-agu-sans-bold-bold';
+        font-size: 3.5rem;
+        color: #fba3a4;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .footer__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-family: 'Merge Pro Bold';
+                font-size: 1.5rem;
+                color: #fba3a4;
+                text-align: center;
+            }
+
+            .rrss {
+                align-items: center;
+                a {
+                    i {
+                        font-size: 1.5rem;
+                        color: #fba3a4;
+                        margin: 1rem;
+                        transition: all 0.3s ease;
+    
+                        &:hover {
+                            color: #faefd8;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+            }
+            
+        }
+
+        .right {
+            p {
+                font-family: 'Merge Pro Bold';
+                font-size: 1.5rem;
+                color: #fba3a4;
+                text-align: center;
+            }
+        }
+    }
+}
+
