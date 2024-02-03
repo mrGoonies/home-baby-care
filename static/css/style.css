@@ -42,14 +42,14 @@ header {
     background-color: #faefd8;
     padding: 2rem;
 
-    
+
 
     img {
         height: 100px;
         width: 150px;
     }
 
-    
+
 
     .nav-link {
         font-size: 1.7rem;
@@ -57,6 +57,7 @@ header {
         margin: 0 1rem;
     }
 }
+
 /* main */
 main {
     .presentation {
@@ -158,6 +159,7 @@ main {
         background-color: #faefd8;
         padding: 2rem;
 
+
         h2 {
             font-family: 'dr-agu-sans-bold-bold';
             font-size: 3.5rem;
@@ -166,105 +168,66 @@ main {
             margin-bottom: 2rem;
         }
 
-        .services__container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-            
+        .form-group {
+            margin: 2rem;
 
-            .services__card {
-                background-color: #358091;
-                padding: 1rem;
-                border-radius: 10px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                transition: all 0.3s ease;
-
-                img {
-                    margin: 2rem;
-                    width: 20%;
-                    margin-bottom: 2rem;
-                    border: 2px solid #faefd8;
-                    border-radius: 50%;
-                    padding: 0.5rem;
-                    
-                }
-
-                h3 {
-                    font-family: 'dr-agu-sans-bold-bold';
-                    font-size: 2rem;
-                    color: #fba3a4;
-                    border: 2px solid #faefd8;
-                    padding: 0.5rem;
-                    border-radius: 10px;
-                    
-                }
-
-                p {
-                    font-family: 'Merge Pro Bold';
-                    font-size: 1.5rem;
-                    color: #fba3a4;
-                    text-align: center;
-                }
-
-                small {
-                    font-family: 'Merge Pro Bold';
-                    font-size: 1.5rem;
-                    color: #faefd8;
-                }
-
-                
+            label {
+                font-family: 'Merge Pro Bold';
+                font-size: 1.5rem;
+                color: #358091;
+                margin-bottom: 1rem;
             }
-            .services__card--last {
-                grid-column: span 2;
-                height: 80%;
 
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center; 
+            input {
+                width: 100%;
+                padding: 1rem;
+                font-family: 'Merge Pro Bold';
+                font-size: 1.1rem;
+                color: #358091;
+                border-radius: 10px;
+                border: none;
+                margin-bottom: 2rem;
+            }
 
-                img {
-                    width: 10%;
-                    margin: 2rem;
-                    border-radius: 50%;
-                    padding: 0.5rem;
-                    border: 2px solid #faefd8;
-                }
+            select {
+                width: 100%;
+                padding: 1rem;
+                font-family: 'Merge Pro Bold';
+                font-size: 1.1rem;
+                color: #358091;
+                border-radius: 10px;
+                border: none;
+                margin-bottom: 2rem;
+            }
 
-                .services__card--last__content {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+            textarea {
+                width: 100%;
+                padding: 1rem;
+                font-family: 'Merge Pro Bold';
+                font-size: 1.1rem;
+                color: #358091;
+                border-radius: 10px;
+                border: none;
+                margin-bottom: 2rem;
+                resize: none;
+            }
+        }
 
-                    h3 {
-                        font-family: 'dr-agu-sans-bold-bold';
-                        font-size: 2rem;
-                        color: #fba3a4;
-                        border: 2px solid #faefd8;
-                        padding: 0.5rem;
-                        border-radius: 10px;
-                    }
+        button {
+            padding: 1rem 2rem;
+            background-color: #358091;
+            color: white;
+            border-radius: 10px;
+            font-family: 'Merge Pro Bold';
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-left: 1.7%;
 
-                    p {
-                        font-family: 'Merge Pro Bold';
-                        font-size: 1.5rem;
-                        color: #fba3a4;
-                        text-align: center;
-                    }
-
-                    small {
-                        font-family: 'Merge Pro Bold';
-                        font-size: 1.5rem;
-                        color: #faefd8;
-                    }
-                }
+            &:hover {
+                background-color: #fba3a4;
+                color: white;
+                transform: scale(1.1);
             }
         }
     }
@@ -294,7 +257,7 @@ footer {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            
             p {
                 font-family: 'Merge Pro Bold';
                 font-size: 1.5rem;
@@ -304,13 +267,14 @@ footer {
 
             .rrss {
                 align-items: center;
+
                 a {
                     i {
                         font-size: 1.5rem;
                         color: #358091;
                         margin: 1rem;
                         transition: all 0.3s ease;
-    
+
                         &:hover {
                             color: #faefd8;
                             transform: scale(1.1);
@@ -319,7 +283,7 @@ footer {
                 }
 
             }
-            
+
         }
 
         .right {
@@ -332,4 +296,3 @@ footer {
         }
     }
 }
-

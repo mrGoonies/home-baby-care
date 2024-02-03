@@ -20,10 +20,10 @@
   <header>
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
-        
-          <img src="static/assets/logo/home-baby-care.ico" alt="Logo empresa Baby care" width="66" height="55"
-            class="d-inline-block align-text">
-        
+
+        <img src="static/assets/logo/home-baby-care.ico" alt="Logo empresa Baby care" width="66" height="55"
+          class="d-inline-block align-text">
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
               <a class="nav-link" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="#">Nosotros</a>
+              <a class="nav-link" href="#">Nosotros</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Servicios</a>
@@ -67,32 +67,28 @@
     </section>
     <section class="services">
       <h2>Nuestros servicios</h2>
-      <!-- Crear tres cards, las dos primeras arriba y la última abajo rellenando el espacio de las otras dos cards-->
-      <div class="services__container">
-        <div class="services__card">
-          <img src="static/assets/img/madre.png" alt="Imagen de consultoría">
-          <h3>BABYSITTER</h3>
-          <p>9 am - 23:30 pm</p>
-          <small>Mínimo 4 hrs / máximo 6 hrs</small>
+      <form action="services.php" method="post">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" class="form-control" id="name" name="name" required>
         </div>
-        <div class="services__card">
-          <img src="static/assets/img/luna.png" alt="Imagen de educación">
-          <h3>CUIDADOS NOCTURNOS</h3>
-          <p>Desde 20:00 pm</p>
-          <small>Mínimo 10 hrs</small>
+        <div class="form-group">
+          <label for="service">Tipo de servicio</label>
+          <select class="form-select" id="service" name="service" required>
+            <option value="Cuidado de recién nacidos">BABYSITTER</option>
+            <option value="Cuidado de bebés">Cuidado nocturnos</option>
+            <option value="Cuidado de niños">Ambos servicios</option>
+          </select>
         </div>
-        <div class="services__card services__card--last">
-          <img src="static/assets/img/bebe.png" alt="">
-          <div class="services__card--last__content">
-            <h3>Ambos servicios</h3>
-            <p>DESDE RN A 10 AÑOS</p>
-          </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
         </div>
-
-
-      </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
     </section>
   </main>
+
   <footer>
     <h3>Home Baby Care</h3>
     <div class="footer__container">
@@ -102,7 +98,8 @@
           <a href="https://www.instagram.com/homebabycare.cl/?igsh=ZW5iazA0eTFnNDgw" target="_blank">
             <i class="fa-brands fa-instagram fa-xl"></i>
           </a>
-          <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2F05gbrf&e=AT3XOPlcCBOSfbY7qQLwk5bojAP59n1BSypHnkS0dJVXcimX4C2nDTGDByqdhwJua6JJMDn_nlx7jD8uJEO710qiah8FtCql" target="_blank">
+          <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2F05gbrf&e=AT3XOPlcCBOSfbY7qQLwk5bojAP59n1BSypHnkS0dJVXcimX4C2nDTGDByqdhwJua6JJMDn_nlx7jD8uJEO710qiah8FtCql"
+            target="_blank">
             <i class="fa-brands fa-whatsapp fa-xl"></i>
           </a>
           <a>
