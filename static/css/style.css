@@ -210,7 +210,10 @@ main {
     .services-form {
         background-color: #faefd8;
         padding: 2rem;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         h2 {
             text-align: center;
@@ -221,12 +224,9 @@ main {
         }
 
         .form-group {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             margin-top: 2rem;
-            width: auto;
+            width: 80rem;
+            
 
             label {
                 font-family: 'dr-agu-sans-bold-bold';
