@@ -325,34 +325,37 @@ footer {
                 text-align: center;
             }
 
-                .rrss {
-                    align-items: center;
+            .rrss {
+                align-items: center;
 
-                    a {
-                        i {
-                            font-size: 1.5rem;
-                            color: #358091;
-                            margin: 1rem;
-                            transition: all 0.3s ease;
+                a {
+                    /* quitar subrayado */
+                    text-decoration: none;
+                    
+                    i {
+                        font-size: 1.5rem;
+                        color: #358091;
+                        margin: 1rem;
+                        transition: all 0.3s ease;
 
-                            &:hover {
-                                color: #faefd8;
-                                transform: scale(1.1);
-                            }
+                        &:hover {
+                            color: #faefd8;
+                            transform: scale(1.1);
                         }
                     }
-
                 }
 
             }
 
-            .right {
-                p {
-                    font-family: 'Merge Pro Bold';
-                    font-size: 1.5rem;
-                    color: #358091;
-                    text-align: center;
-                }
+        }
+
+        .right {
+            p {
+                font-family: 'Merge Pro Bold';
+                font-size: 1.5rem;
+                color: #358091;
+                text-align: center;
             }
         }
     }
+}
