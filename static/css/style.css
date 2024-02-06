@@ -435,7 +435,20 @@ footer {
             flex-direction: column;
         }
     }
-    
+
+    main .services .cards .services__card {
+        img {
+            width: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
 }
 
 
