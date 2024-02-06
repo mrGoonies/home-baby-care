@@ -424,14 +424,24 @@ footer {
 }
 
 @media (max-width: 670px) {
-    main .presentation .presentation__left {
-        h1 {
-            font-size: 2rem;
-        }
 
-        a {
-            font-size: 0.8rem;
+    main .presentation {
+        /*Colocar imagen arriba del titulo*/
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+
+        .presentation__left {
+            h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            a {
+                font-size: 1rem;
+            }
         }
+    
     }
 
     main .about {
@@ -475,6 +485,12 @@ footer {
             font-size: 1.2rem;
         }
     }
+    /*Ocultar imagen*/
+    main .presentation .presentation__right {
+        img {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 430px) {
@@ -489,14 +505,29 @@ footer {
         .rrss {
             a {
                 i {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                 }
             }
         }
+    }
 
     footer .footer__container .right {
         p {
             font-size: 0.8rem;
         }
     }
+}
+
+@media (max-width: 400px) {
+    footer .footer__container .left {
+        .rrss {
+            a {
+                i {
+                    font-size: 0.8rem;
+                    margin: 0.5rem;
+                }
+            }
+        }
+    }
+
 }
