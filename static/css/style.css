@@ -416,39 +416,18 @@ footer {
         }
     }
 
-    main .about .about__right {
-        p {
-            font-size: 1.2rem;
-        }
-    }
-
-    footer .footer__container .right {
-        p {
-            font-size: 1.2rem;
-        }
-    }
+    
 }
 
-@media (max-width: 735px) {
-    header {
-        nav {
-            flex-direction: column;
-        }
-    }
-
-    main .services .cards .services__card {
-        img {
-            width: 3rem;
-        }
-
-        h3 {
+@media (max-width: 670px) {
+    main .presentation .presentation__left {
+        h1 {
             font-size: 2rem;
         }
 
-        p {
-            font-size: 1.2rem;
+        a {
+            font-size: 0.8rem;
         }
+    
     }
 }
-
-
