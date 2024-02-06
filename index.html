@@ -20,22 +20,18 @@
         <img src="static/assets/logo/home-baby-care.ico" alt="Logo de empresa Home Baby Care">
       </div>
       <div class="menu">
-        <ul>
-          <li>
-            <a href="#inicio">Inicio</a>
-          </li>
-          <li>
-            <a href="#nosotros">Nosotros</a>
-          </li>
-          <li>
-            <a href="#servicios">Servicios</a>
-          </li>
-          <li>
-            <a href="#contacto">Contacto</a>
-          </li>
+        <ul class="menu-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+          <div class="close">X</div>
+        </div>
       </div>
-    </nav>
+    </nav>    
   </header>
   <main>
     <section id="inicio" class="presentation">
@@ -83,7 +79,7 @@
       
     </section>
     <section id="contacto" class="services-form">
-      <h2>Contáctenos</h2>
+      <h2>Contáctanos</h2>
       <form action="services.php" method="post">
         <div class="form-group">
           <label for="name">Nombre</label>
@@ -137,6 +133,7 @@
   </footer>
   <!-- sJS -->
   <script src="https://kit.fontawesome.com/af5a3a3bdd.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
