@@ -476,3 +476,19 @@ footer {
         }
     }
 }
+
+@media (max-width: 430px) {
+    footer .footer__container .left .rrss {
+        a {
+            i {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    footer .footer__container .right {
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
