@@ -41,21 +41,46 @@ body::-webkit-scrollbar-track {
 header {
     background-color: #faefd8;
     padding: 2rem;
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+        .logo {
+            img {
+                width: 10rem;
+            }
+        }
 
+        .menu {
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                li {
+                    list-style: none;
+                    margin: 0 1rem;
 
-    img {
-        height: 100px;
-        width: 150px;
+                    a {
+                        font-family: 'Merge Pro Bold';
+                        font-size: 1.5rem;
+                        color: #358091;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            color: #fba3a4;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
-
-    .nav-link {
-        font-size: 1.7rem;
-        font-family: 'Merge Pro Bold';
-        margin: 0 1rem;
-    }
 }
 
 /* main */
@@ -183,9 +208,10 @@ main {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+                height: 100%;
 
                 img {
-                    width: 100px;
+                    width: 5rem;
                     margin-bottom: 2rem;
                 }
 
@@ -207,91 +233,6 @@ main {
         }
     }
 
-    .services-form {
-        background-color: #faefd8;
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h2 {
-            text-align: center;
-            color: #358091;
-            font-family: 'dr-agu-sans-bold-bold';
-            font-size: 3rem;
-        
-        }
-
-        .form-group {
-            margin-top: 2rem;
-            width: 80rem;
-            
-
-            label {
-                font-family: 'dr-agu-sans-bold-bold';
-                font-size: 1.8rem;
-                color: #358091;
-                margin-bottom: 2rem;
-            }
-
-            input {
-                padding: 1rem 2rem;
-                margin-bottom: 2rem;
-                border-radius: 10px;
-                border: none;
-                font-family: 'Merge Pro Bold';
-                font-size: 1.6rem;
-                color: #358091;
-                text-align: left;
-                
-            }
-
-            select {
-                padding: 1rem 1rem;
-                margin-bottom: 2rem;
-                border-radius: 10px;
-                border: none;
-                font-family: 'Merge Pro Bold';
-                font-size: 1.5rem;
-                color: #358091;
-                text-align: left;
-            }
-
-            textarea {
-                padding: 1rem 1rem;
-                margin-bottom: 2rem;
-                border-radius: 10px;
-                border: none;
-                font-family: 'Merge Pro Bold';
-                font-size: 1.5rem;
-                color: #358091;
-                text-align: left;
-                resize: none;
-            }
-
-            button {
-                padding: 1rem 2rem;
-                margin-bottom: 2rem;
-                background-color: #358091;
-                color: white;
-                border-radius: 10px;
-                font-family: 'Merge Pro Bold';
-                font-size: 1.5rem;
-                text-decoration: none;
-                transition: all 0.3s ease;
-            
-    
-                &:hover {
-                    background-color: #fba3a4;
-                    color: white;
-                    transform: scale(1.1);
-                }
-            }
-        }
-
-        
-    }
 }
 
 footer {
@@ -360,3 +301,23 @@ footer {
         }
     }
 }
+
+/*Media Queries*/
+@media (max-width: 990px) {
+    main .presentation .presentation__left {
+        h1 {
+            font-size: 3rem;
+        }
+        a {
+            padding: 1rem 1rem;
+        }
+    }
+
+    main .services .cards {
+    grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
