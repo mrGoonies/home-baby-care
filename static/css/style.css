@@ -419,6 +419,15 @@ footer {
     
 }
 
+@media (max-width: 670px) {
+    main .presentation .presentation__left {
+        h1 {
+            font-size: 2rem;
+        }
 
-
-
+        a {
+            font-size: 0.8rem;
+        }
+    
+    }
+}
