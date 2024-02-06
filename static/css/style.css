@@ -429,6 +429,13 @@ footer {
     }
 }
 
-
+@media (max-width: 735px) {
+    header {
+        nav {
+            flex-direction: column;
+        }
+    }
+    
+}
 
 
