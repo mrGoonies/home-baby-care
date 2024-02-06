@@ -450,3 +450,15 @@ footer {
         }
     }
 }   
+
+@media (max-width: 580px) {
+    main .presentation .presentation__left {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        a {
+            font-size: 0.62rem;
+        }
+    }
+}
