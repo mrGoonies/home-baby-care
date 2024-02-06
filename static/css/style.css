@@ -421,6 +421,12 @@ footer {
             font-size: 1.2rem;
         }
     }
+
+    footer .footer__container .right {
+        p {
+            font-size: 1.2rem;
+        }
+    }
 }
 
 
