@@ -233,6 +233,93 @@ main {
         }
     }
 
+    .services-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #faefd8;
+
+        h2 {
+            font-family: 'dr-agu-sans-bold-bold';
+            font-size: 3.5rem;
+            color: #358091;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+
+                label {
+                    font-family: 'Merge Pro Bold';
+                    font-size: 1.5rem;
+                    color: #358091;
+                }
+
+                input {
+                    padding: 0.5rem 1rem;
+                    border-radius: 10px;
+                    border: none;
+                    font-family: 'Merge Pro Bold';
+                    font-size: 1.3rem;
+                    color: #358091;
+                    margin-bottom: 1.3rem;
+                }
+
+                select {
+                    padding: 0.5rem 1rem;
+                    border-radius: 10px;
+                    border: none;
+                    font-family: 'Merge Pro Bold';
+                    font-size: 1.3rem;
+                    color: #358091;
+                    margin-bottom: 2rem;
+                    text-align: center;
+                }
+
+                textarea {
+                    padding: 0.5rem 1rem;
+                    border-radius: 10px;
+                    border: none;
+                    font-family: 'Merge Pro Bold';
+                    font-size: 1.3rem;
+                    color: #358091;
+                    margin-bottom: 2rem;
+                    resize: none;
+                }
+
+                button {
+                    padding: 0.5rem 1rem;
+                    background-color: #358091;
+                    color: white;
+                    border-radius: 10px;
+                    font-family: 'Merge Pro Bold';
+                    font-size: 1.2rem;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                    margin-bottom: 2rem;
+
+                    &:hover {
+                        background-color: #fba3a4;
+                        color: white;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 footer {
@@ -241,7 +328,7 @@ footer {
 
     h3 {
         font-family: 'dr-agu-sans-bold-bold';
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         color: #358091;
         margin-bottom: 2rem;
         text-align: center;
