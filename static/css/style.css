@@ -44,6 +44,12 @@ nav {
     align-items: center;
     background-color: #faefd8;
     padding: 10px 20px;
+
+    .logo {
+        img {
+            max-width: 7rem;
+        }
+    }
 }
 
 .menu-list {
